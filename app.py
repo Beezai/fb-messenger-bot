@@ -39,21 +39,20 @@ def webhook():
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
 #                     send_message(sender_id,message_text)
-                    now = datetime.now()
-                    send_message(sender_id, now.strftime("The time is %H:%M"))
-#                     msg = ["Hello", "Wassup", "Get lost", "How u been", "Cool"]
-#                     time = ['what time is it', 'what is the time', 'time']
-#                     greetings = ['hey there', 'hello', 'hi', 'Hai', 'hey!', 'hey']
 #                     now = datetime.now()
 #                     send_message(sender_id, now.strftime("The time is %H:%M"))
+                    msg = ["Hello", "Wassup", "Get lost", "How u been", "Cool"]
+                    time = ['what time is it', 'what is the time', 'time']
+                    greetings = ['hey there', 'hello', 'hi', 'Hai', 'hey!', 'hey']
+                    
             
                     
-#                     while True:
-#                         if message_text in time:
-#                             now = datetime.now()
-#                             send_message(sender_id, now.strftime("The time is %H:%M"))
-#                         elif message_text in greetings:
-#                             send_message(sender_id, random.greetings())
+                    while True:
+                        if message_text in time:
+                            now = datetime.now()
+                            send_message(sender_id, now.strftime("The time is %H:%M"))
+                        elif message_text in greetings:
+                            send_message(sender_id, random.greetings())
                             
                             
                             
