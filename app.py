@@ -41,7 +41,9 @@ def webhook():
                     msg = ["Hello", "Wassup", "Get lost", "How u been", "Cool"]
                     time = ['what time is it', 'what is the time', 'time']
                     greetings = ['hey there', 'hello', 'hi', 'Hai', 'hey!', 'hey']
+                    now = datetime.now()
                     send_message(sender_id, now.strftime("The time is %H:%M"))
+                    
 #                     while True:
 #                         if message_text in time:
 #                             now = datetime.now()
